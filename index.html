@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai</title>
+    <link rel="shortcut icon" href="/assets/chai.png" type="image/x-icon">
+
+    <!-- font awesome icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- swiper slider css file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"
+      integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/afd6aa68df.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="shadow bg-light">
+      <nav class="">
+        <span style="display: flex; align-items:center; margin-inline:3rem">
+          <a href="/index.html" class="logof"> Chai </a>
+          <img style="width: 60px" src="/assets/chai.png" alt="" />
+        </span>
+        <!-- toggle button -->
+        <button class="toggle-button">
+          <span><i class="fas fa-bars"></i></span>
+        </button>
+
+        <!-- collapse on toggle button click -->
+        <div class="collapse">
+          <ul class="nbar-n">
+            <a href="/" class="n-link">Latest</a>
+            <!-- <a href="?category=general" class="n-link">General</a> -->
+            <a href="?category=Business" class="n-link">Business</a>
+            <a href="?category=technology" class="n-link">Technology</a>
+            <a href="?category=entertainment" class="n-link">Entertainment</a>
+            <a href="?category=sports" class="n-link">Sports</a>
+            <a href="?category=science" class="n-link">Science</a>
+            <a href="?category=health" class="n-link">Health</a>
+          </ul>
+          <!-- </div> -->
+
+          <!-- collapse on toggle button click -->
+          <!-- <div class="collapse"> -->
+          <ul class="nbar-n">
+            <div class="box">
+              <form name="search">
+                <input
+                  type="text"
+                  class="input"
+                  name="txt"
+                  onmouseout="document.search.txt.value = ''"
+                />
+              </form>
+              <i class="fas fa-search"></i>
+            </div>
+            <!-- <div class="search-box">
+                        
+                        <a href="#" class="n-link"><i class="fas fa-search"></i></a>
+                        
+                    </div> -->
+            <a href="#" class="n-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="n-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="n-link"><i class="fab fa-instagram"></i></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- .Header -->
+
+    <!-- Main Site -->
+    <main id="site-main">
+      <!-- Blog Post Section -->
+      <section id="posts">
+        <div class="container">
+          <div class="grid">
+            <!-- article -->
+            <!-- <div class="grid-item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow-img">
+                                    <a href="/sidebar.html">
+                                        <img src="./assets/img1.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body text-center px-1">
+                                    <a href="/sidebar.html" class="text-title display-1 text-dark">
+                                        Looking for some feedback for this rejected track
+                                        technology
+                                    </a>
+                                    <p class="secondary-title text-secondary display-3">
+                                        <span><i class="far fa-clock text-primary"></i> Clock Wed 04, 2022</span>
+                                        <span><i class="far fa-comments text-primary"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div> -->
+            <!-- .article -->
+          </div>
+
+          <div class="text-center">
+            <button
+              class="btn btn-primary secondary-title text-light"
+              onclick="addArticles()"
+            >
+              Load More Posts...
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- .Blog Post Section -->
+
+      <!-- Swiper slider -->
+      <section class="slider">
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="./assets/slider/img1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- Slides -->
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="./assets/slider/img2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- Slides -->
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="./assets/slider/img3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- Slides -->
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="./assets/slider/img4.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="./assets/slider/img5.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="./assets/slider/img6.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="./assets/slider/img7.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- Slides -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- .Swiper slider -->
+    </main>
+    <!-- .Main Site -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-3">
+            <h2 class="footer-title secondary-title">About Us</h2>
+
+            <div class="secondary-title text-secondary">
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deserunt quis voluptate alias illum modi tenetur, iste
+                voluptatem illo. Accusantium, corrupti!
+              </p>
+
+              <address>
+                <i class="fas fa-map-marker-alt text-primary"></i>
+                5 sector jaipur India
+              </address>
+
+              <div class="phone">
+                <i class="fas fa-mobile text-primary"></i>
+                1800-455-45454
+              </div>
+
+              <div class="email">
+                <i class="fas fa-envelope text-primary"></i>
+                blogysupport@gmail.com
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <h2 class="footer-title secondary-title">Feature Post</h2>
+
+            <div class="feature-post">
+              <div class="flex-item">
+                <article class="article">
+                  <div class="d-flex">
+                    <a href="#">
+                      <img
+                        src="./assets/img9.jpg"
+                        class="object-fit px-1"
+                        alt=""
+                      />
+                      <div class="px-1">
+                        <a href="#" class="text-title display-2 text-dark">
+                          Looking for some feedback for this rejected track
+                          technology
+                        </a>
+                        <p class="secondary-title text-secondary display-3">
+                          <span
+                            ><i class="far fa-clock text-primary"></i> Clock Wed
+                            02, 2021
+                          </span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="flex-item">
+                <article class="article">
+                  <div class="d-flex">
+                    <a href="#">
+                      <img
+                        src="./assets/img1.jpg"
+                        class="object-fit px-1"
+                        alt=""
+                      />
+                      <div class="px-1">
+                        <a href="#" class="text-title display-2 text-dark">
+                          Looking for some feedback for this rejected track
+                          technology
+                        </a>
+                        <p class="secondary-title text-secondary display-3">
+                          <span
+                            ><i class="far fa-clock text-primary"></i> Clock Wed
+                            02, 2021
+                          </span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="flex-item">
+                <article class="article">
+                  <div class="d-flex">
+                    <a href="#">
+                      <img
+                        src="./assets/img2.jpg"
+                        class="object-fit px-1"
+                        alt=""
+                      />
+                      <div class="px-1">
+                        <a href="#" class="text-title display-2 text-dark">
+                          Looking for some feedback for this rejected track
+                          technology
+                        </a>
+                        <p class="secondary-title text-secondary display-3">
+                          <span
+                            ><i class="far fa-clock text-primary"></i> Clock Wed
+                            02, 2021
+                          </span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <h2 class="footer-title secondary-title">Tags</h2>
+
+            <div class="tags">
+              <div class="d-flex flex-wrap">
+                <a href="?category=entertainment" class="n-link btn bg-light"
+                  >Entertainment</a
+                >
+                <a href="?category=sports" class="n-link btn bg-light"
+                  >Sports</a
+                >
+                <a href="?category=business" class="n-link btn bg-light"
+                  >Business</a
+                >
+                <a href="?category=technology" class="n-link btn bg-light"
+                  >Techonogy</a
+                >
+                <a href="?category=health" class="n-link btn bg-light"
+                  >Health</a
+                >
+              </div>
+            </div>
+
+            <h2 class="footer-title secondary-title mt-2">Social</h2>
+
+            <div class="tags social">
+              <div class="d-flex flex-wrap">
+                <a href="#" class="n-link btn bg-light"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="n-link btn bg-light"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="n-link btn bg-light"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="n-link btn bg-light"
+                  ><i class="fab fa-dribbble"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- copyrights  -->
+        <div class="copyrights">
+          <p class="text-center text-secondary display-2">
+            © 2022 <a href="#" class="text-primary">Dailytuition</a> - Personal
+            Blog Theme. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- .footer -->
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" onclick="popup">
+      Open Modal
+    </button>
+
+    <!-- Modal -->
+    <div id="modalWrapper">
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+                onclick="popup"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- masonry libray for horizontal grid -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+      integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiper slider cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
+      integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom javascript main.js file -->
+    <script src="main.js"></script>
+  </body>
+</html>
